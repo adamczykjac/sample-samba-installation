@@ -22,5 +22,5 @@ chown nobody.nogroup /srv/samba/share
 chmod 755 /srv/samba/share
 
 echo "Restarting daemons"
-restart smbd
-restart nmbd
+service smbd restart
+service nmbd restart
